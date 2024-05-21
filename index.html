@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+</head>
+<body>
+   <nav id="desktop-nav">
+     <div class="logo">Huyen Le</div> 
+     <div> 
+        <ul class= "nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#Projects">Projects</a></li>  
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+     </div>
+   </nav>
+   <nav id="hamburger-nav">
+    <div class="logo">Huyen Le</div>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+    </div>
+    <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>  
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+    </div>
+    </div>
+   </nav>
+   <section id="profile">
+     <div class="section__pic-container">
+        <img src="./cropped_image.png" alt="Huyen Le profile picture"
+        >
+    </div>
+    <div class="section__text">
+        <p class="section__text__p1">Hello!</p>
+        <h1 class="title">Huyen Le</h1>
+        <p class="section_text_p2">2nd Year Commerce Student</p>
+        <div class="btn-container">
+            <button 
+            class="btn btn-color-2" 
+            onclick="window.open('https://drive.google.com/file/d/1Hcp1eloXuyeEVrvQr7Wpn0pVG7ER44E5/view?usp=sharing','_blank')"
+            >My Resume
+        </button>
+        <button 
+            class="btn btn-color-1" 
+            onclick="window.open('https://huyenttle.my.canva.site/portfolio','_blank')"
+        >Marketing Portfolio
+    </button>
+    </div>
+    <div id="social-container">
+        <img
+        src="./linkedin_black_logo_icon_147114.png"
+        alt="My LinkedIn profile"
+        class="icon"
+        onclick="location.href='https://www.linkedin.com/in/huyenttle/'"
+        />
+        <img
+        src="./github_black_logo_icon_147128.png"
+        alt="My Github profile"
+        class="icon"
+        onclick="location.href='https://github.com/huyenle1405'"
+        />
+    </div>
+    </div>
+   </section>
+   <section id="about"> 
+    <h1 class="title"> About Me</h1>
+    <p class="section_text_p2"> I’m Huyen(Harper), a second-year Commerce student at York University, with a profound enthusiasm for technology and marketing. As a tech-driven individual who grows from <b>curiosity</b>, I am eager to blend <b>creativity</b> with strategic insights and <b>data analyitcs</b> in this exploration.</p>
+            </div>
+        </div>
+        </div> 
+   </section> 
+   <section id="projects">
+    <div class =”container”>
+      <p class = "section__text_p1">Browse my recent</p>
+      <h1 class ="title">Projects</h1>
+      <div class ="experiencce-details-container"> 
+        <div class="about-container">
+        <div class="details-container color-container">
+            <div class="article-container">
+                <img 
+                 src="./new ec.jpg" 
+                 alt="Project 1" 
+                 class="project-img" 
+                />
+            </div>
+            <h2 class="experience-sub-title project-title">Store Consumer Behavior Analysis</h2>
+            <p class="section__text_p2"></p>
+            <div class="btn-container">
+                <button 
+                  class="btn btn-color-2 project-btn" 
+                  onclick="location.href='https://github.com/huyenle1405/C2C-Ecommerce-store-Analysis'"
+                >
+                  Github
+                </button>
+            </div>
+        </div>
+        <div class="details-container color-container">
+            <div class="article-container">
+                <img 
+                 src="./series-netflix-top-10-1-1.webp" 
+                 alt="Project 1" 
+                 class="project-img" 
+                />
+            </div>
+            <h2 class="experience-sub-title project-title">Netflix TV Shows and Movies Analysis</h2>
+            <p class="section__text_p2"></p>
+            <div class="btn-container">
+                <button 
+                  class="btn btn-color-2 project-btn" 
+                  onclick="location.href='https://github.com/huyenle1405/Netflix-Movies-Analysis'"
+                >
+                  Github
+                </button>
+            </div>
+        </div> 
+        <div class="details-container color-container">
+            <div class="article-container">
+                <img 
+                 src="./loreal brand newfw.png" 
+                 alt="Project 1" 
+                 class="project-img" 
+                />
+            </div>
+            <h2 class="experience-sub-title project-title">L'Oreal Brandstorm 2023</h2>
+            <p class="section__text_p2"></p>
+            <div class="btn-container">
+                <button 
+                  class="btn btn-color-2 project-btn" 
+                  onclick="location.href='https://drive.google.com/drive/folders/13pPa22Rdi2mlxBnp8UbWbzNDHSWKx9HT'"
+                >
+                  Product Pitch
+                </button>
+                <button 
+                  class="btn btn-color-2 project-btn" 
+                  onclick="location.href='https://www.figma.com/design/mUN5MjpR2zqob5uCJPW1wD/Lorealm-Brandstorm?node-id=0%3A1&t=RFEL0XdGsvrP9nHo-1'"
+                >
+                  Figma
+                </button>
+            </div>
+        </div>
+    </div>
+  </section>
+  <section id="contact">
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+             <img src="./icons8-email-30.png" 
+             alt="email icon"
+             class="icon contact-icon"
+              /> 
+              <p><a href="mailto:huyenttle1405@gmail.com">huyenttle1405@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+             <img src="./linkedin_black_logo_icon_147114.png" 
+             alt="linkedin icon"
+             class="icon contact-icon"
+             onclick="location.href='https://www.linkedin.com/in/huyenttle/'">
+        </div>
+  </section>
+  <footer>
+    <nav>
+        <div class="nav-links-container">
+         <ul class= "nav-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>  
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  <p>Copy right &#169; 2024 Huyen Le. All Rights Reserved.</p>
+  </footer>
+ <script src="script.js"></script>
+</body>
+</html>
